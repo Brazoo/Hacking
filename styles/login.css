@@ -1,0 +1,131 @@
+@font-face {
+	font-family: 'Press Start 2P';
+	src: url(../fonts/Press_Start_2P/PressStart2P.ttf);
+}
+
+@font-face {
+	font-family: 'Ubuntu';
+	src: url(../fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+
+body {
+	background-color: #181421;
+	overflow: hidden;
+	font-family: 'Ubuntu';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.arealogin {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 95vh;
+}
+
+.login {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #0e0b13;
+	width: 350px;
+	height: 350px;
+	padding: 20px;
+	border-radius: 15px;
+	border: 2px solid #77ffc0;
+	box-shadow: 30px 30px 25px rgba(0, 0, 0, 0.5);
+}
+
+::-ms-reveal {
+	filter: invert(100%);
+}
+
+.login form {
+	width: 250px;
+	display: flex;
+	flex-direction: column;
+}
+
+.login input {
+	color: rgb(199, 199, 199);
+	margin-top: 7px;
+	background-color: #181421;
+	border: none;
+	border-radius: 5px;
+	padding-left: 7px;
+	height: 30px;
+	outline: none;
+}
+
+input[type=submit] {
+	font-size: 16px;
+	letter-spacing: 2px;
+	font-weight: bolder;
+	color: black;
+	text-decoration-line: none;
+	text-align: center;
+	border-radius: 7px;
+	padding: 6px;
+	background: #77ffc0;
+}
+
+
+
+input[type=submit],
+.img {
+	display: inline-block;
+	vertical-align: middle;
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	transition-duration: 0.3s;
+	transition-property: transform;
+}
+
+input[type=submit]:active,
+input[type=submit]:focus,
+input[type=submit]:hover,
+.img:hover,
+.img:focus,
+.img:active {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+p {
+	font-size: large;
+	color: rgb(165, 161, 161);
+}
+
+.login img {
+	padding-top: 15px;
+	padding-bottom: 20px;
+	width: 80px;
+	height: auto;
+}
+
+.btn {
+	font-size: 15px;
+	margin-top: 8px;
+	color: black;
+	text-decoration-line: none;
+	text-align: center;
+	border-radius: 7px;
+	padding: 6px;
+	background-color: #77ffc0;
+}
+
+.erro {
+	color: #77ffc0;
+	text-decoration-line: none;
+}
+
+.erro:hover {
+	color: #fff;
+	transition: ease-in-out .2s;
+}
+
+.input::placeholder {
+	color: rgb(199, 199, 199);
+}
